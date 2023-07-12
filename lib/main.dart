@@ -1,18 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:focus_app/views/task_page.dart';
+import 'package:focus_app/views_models/app_view_model.dart';
+import 'package:provider/provider.dart';
 
-void main() => runApp(const MyApp());
+void main() {
+  runApp(ChangeNotifierProvider(
+      create: (context) => AppViewModel(), child: const MyApp()));
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.green,
-      ),
+    return const MaterialApp(
+      home: TaskPage(),
     );
   }
 }
