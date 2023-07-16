@@ -40,7 +40,7 @@ class TaskInfoView extends StatelessWidget {
                           alignment: Alignment.topCenter,
                           child: FittedBox(
                             child: Text(
-                              'so task',
+                              'số task',
                               style: TextStyle(
                                   color: viewModel.clrLv4,
                                   fontWeight: FontWeight.w600),
@@ -80,7 +80,7 @@ class TaskInfoView extends StatelessWidget {
                           alignment: Alignment.topCenter,
                           child: FittedBox(
                             child: Text(
-                              'chx xong',
+                              'task chưa xong',
                               style: TextStyle(
                                   color: viewModel.clrLv4,
                                   fontWeight: FontWeight.w600),
